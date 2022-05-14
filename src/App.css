@@ -1,38 +1,217 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pokemonInput {
+    background-color: #141c1c;
+    width: 300px;
+    height: 40px;
+    color: white;
+    border: none;
+    font-size: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pokemonProfile {
+    border-color: black;
+    border-style: solid;
+    margin-left: 1in;
+    margin-right: 1in;
+    height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav {
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(70, 69, 69);
+    height: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.randomButton {
+    background-color: #28cf31;
+    color: White;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    font-weight: bolder;
+    font-size: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.typeList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: max-content;
+    background-color: white;
+    align-items: center;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.labelRow {
+    gap: 100px;
+    margin-left: 1in;
+    margin-right: 1in;
+    justify-content: space-between;
+    display: flex;
+}
+
+.labelButtons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item {
+    border-style: solid;
+    border-color: black;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #141c1c;
+}
+
+.pokemonList {
+    /* border-color: black;
+  border-style: solid; */
+    margin-left: 1in;
+    margin-right: 1in;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    /* justify-content: left; */
+}
+
+.pokedexList {
+    color: white;
+    font-weight: bolder;
+    width: 110px;
+    height: 45px;
+    background-color: rgb(43, 92, 226);
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+.typeLabel {
+    border: black;
+    outline: solid;
+    border-radius: 15px;
+    font-size: x-large;
+    font-weight: bold;
+    display: block;
+    width: 100px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 10px;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.stat {
+    border: black;
+    border-style: solid;
+    font-size: large;
+    width: 10em;
+    height: 2em;
+    border-radius: 10px;
+}
+
+.description {
+    font-size: xx-large;
+}
+
+.favoriteButton {
+    background-color: #cf3b28;
+    color: White;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.favoritesContainer {
+    margin: 0.5in;
+    justify-content: space-between;
+}
+
+.favorite-section {
+    height: 300px;
+    margin-top: 5px;
+}
+
+.select {
+    margin-top: 10px;
+    width: 25em;
+    height: 2em;
+    border-radius: 5px;
+}
+
+.favoriteImage {
+    margin-top: 2em;
+}
+
+.typeTitle {
+    text-align: left;
+    font-size: larger;
+    margin-left: 1em;
+}
+
+.favoriteCenter {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+.pokedordleLabel {
+    color: white;
+    cursor: pointer;
+}
+
+.pokeLetter {
+    width: 75px;
+    height: 75px;
+    border-style: solid;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: xx-large;
+    line-height: 75px;
+}
+
+.pokeRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.board {
+    margin-top: 5px;
 }
